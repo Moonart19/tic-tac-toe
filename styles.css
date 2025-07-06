@@ -8,10 +8,22 @@ body {
   background-color: #444;
   color: wheat;
   text-align: center;
+  padding: 20px;
+}
+
+label {
+  font-size: 1.2em;
 }
 
 .title {
   margin-bottom: 40px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 input {
@@ -21,6 +33,11 @@ input {
   margin-right: 1em;
   font-size: 1rem;
   padding: 1rem;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid #4568;
 }
 
 .start-button {
