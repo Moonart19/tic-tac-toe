@@ -8,7 +8,8 @@ body {
   background-color: #444;
   color: wheat;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
+  font-family: "Bitcount Grid Double", system-ui;
 }
 
 label {
@@ -19,20 +20,25 @@ label {
   margin-bottom: 40px;
 }
 
-.controls {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 input {
   border: none;
   border-radius: 1em;
   height: 2em;
   margin-right: 1em;
   font-size: 1rem;
+  font-family: inherit;
   padding: 1rem;
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: block;
+  margin-top: 20px;
 }
 
 input:focus {
@@ -44,6 +50,7 @@ input:focus {
   padding: 1rem;
   width: 100px;
   font-size: 1rem;
+  font-family: inherit;
   border-radius: 1rem;
   border: none;
   background-color: peachpuff;
@@ -55,7 +62,7 @@ input:focus {
   height: 600px;
   margin: auto;
   background-color: #999;
-  margin-top: 50px;
+  margin-top: 20px;
   border-radius: 1em;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -77,4 +84,18 @@ input:focus {
 p.message {
   color: white;
   font-size: 2rem;
+}
+
+.player-message {
+  display: none;
+}
+
+.player-winner {
+  color: green;
+  font-size: 2em;
+}
+
+.player-playing {
+  color: red;
+  font-size: 1.2em;
 }

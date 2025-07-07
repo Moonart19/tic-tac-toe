@@ -3,24 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=WDXL+Lubrifont+TC&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
     <title>Tic Tac Toe</title>
   </head>
   <body>
     <h1 class="title">Tic Tac Toe</h1>
-    <div class="controls">
-      <label for="player1"
-        >Player 1: <input type="text" name="player1" id="player1"
-      /></label>
-      <label for="player2"
-        >Player 2: <input type="text" name="player2" id="player2"
-      /></label>
+    <div class="inputs">
+      <div class="input-row">
+        <label for="player1">Player 1:</label
+        ><input type="text" name="player1" id="player1" />
+      </div>
+      <div class="input-row">
+        <label for="player2">Player 2: </label
+        ><input type="text" name="player2" id="player2" />
+      </div>
+    </div>
+    <div class="button">
       <button class="start-button js-start-button">Start</button>
     </div>
 
     <div class="gameboard"></div>
     <p class="message js-message">Enter the players name</p>
-    <p class="js-player-name-message"></p>
+    <p class="player-message js-player-name-message">Restart to play again</p>
   </body>
 </html>
